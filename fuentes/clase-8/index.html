@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-coderhouse.png" type="image/x-icon">
+    <!-- LINK A GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--LINK A CSS PROPIO-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <!--TODO EL CUERPO DEL SITIO VA DENTRO DEL BODY-->
+    <header>
+        <a href="index.html">
+            <img src="img/logo-coderhouse.png" alt="Logo Coderhouse">
+        </a>
+        <!-- Etiqueta semantica de navegacion -->
+        <nav>
+            <ul class="lista-nav">
+                <li>
+                    <a href="index.html" class="enlaces">Inicio</a>
+                </li>
+                
+                <li>
+                    <a href="pages/galeria.html" class="enlaces">Galeria de imágenes</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner inicial -->
+    <div class="banner">
+        <h1>Bienvenidos a nuestro segundo after class</h1>
+    </div>
+
+    <section>
+        <h2>Les damos la bienvenida a nuestra tienda</h2>
+        <p class="parrafo-desc">No somos una tienda cualquiera para desarrolladores, también hemos construido algunos cursos de programación inicial, con los mejores profesores, los mejores precios y sobre todo, la mejor comunidad de alumnos.</p>
+
+        <h2 class="h2-productos">Mira algunos de nuestros productos</h2>
+
+        <!-- Cards de productos -->
+        <div class="padre-cards">
+            <!-- CARD 1 -->
+            <div class="card">
+                <img src="img/remera1.jpg" alt="Remera">
+
+                <p>Remera programación</p>
+                <p>U$D 30</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat numquam et perferendis nulla sapiente iusto natus nihil molestias possimus, praesentium delectus saepe dolores consectetur cumque alias rerum maiores autem. Sed!</p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="card">
+                <img src="img/remera2.jpg" alt="Remera">
+
+                <p>Remera programación</p>
+                <p>U$D 30</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat numquam et perferendis nulla sapiente iusto natus nihil molestias possimus, praesentium delectus saepe dolores consectetur cumque alias rerum maiores autem. Sed!</p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+            
+            <!-- CARD 3 -->
+            <div class="card">
+                <img src="img/remera3.jpg" alt="Remera">
+
+                <p>Remera programación</p>
+                <p>U$D 30</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat numquam et perferendis nulla sapiente iusto natus nihil molestias possimus, praesentium delectus saepe dolores consectetur cumque alias rerum maiores autem. Sed!</p>
+
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="card">
+                <img src="img/pc1.jpg" alt="PC">
+
+                <p>Notebook de marca</p>
+                <p>U$D 300</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat numquam et perferendis nulla sapiente iusto natus nihil molestias possimus, praesentium delectus saepe dolores consectetur cumque alias rerum maiores autem. Sed!</p>
+                
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+
+            <!-- CARD 5 -->
+            <div class="card">
+                <img src="img/pc2.jpg" alt="PC">
+
+                <p>PC de marca</p>
+                <p>U$D 30</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat numquam et perferendis nulla sapiente iusto natus nihil molestias possimus, praesentium delectus saepe dolores consectetur cumque alias rerum maiores autem. Sed!</p>
+                <button>
+                    Agregar al carrito
+                </button>
+            </div>
+        </div><!--Cierre padre cards-->        
+    </section>
+
+    <section>
+        <h2>Estos son algunos de nuestros cursos:</h2>
+
+        <!-- Padre Contenedores -->
+        <div class="contenedor-padre">
+            <!-- contenedor 1 -->
+            <div class="contenedor">
+                <img src="img/codigo.jpg" alt="Código">
+                <div class="contenedor-textos">
+                    <h3>Curso de Front End Inicial</h3>
+                    <p class="parrafo-cursos">En este aprenderás curso aprenderás los fundamentos básicos de HTML y CSS, que son los lenguajes mas importantes al momento de estructurar tus sitios web y personalizarle los estilos.</p>
+                </div>
+            </div>
+
+            <!-- contenedor 2 -->
+            <div class="contenedor reverse">
+                <img src="img/codigo.jpg" alt="Código">
+
+                <div class="contenedor-textos">
+                    <h3>JavaScript</h3>
+                    <p class="parrafo-cursos">Una vez que aprendiste a estructurar y estilar tu sitio web, es hora de darle interactividad. Haz que tu sitio web sea mas interactivo, entretenido y poderoso gracias al lenguaje más demandado en la programación Front End</p>                
+                </div>
+            </div>
+
+            <!-- contenedor 3 -->
+            <div class="contenedor">
+                <img src="img/codigo.jpg" alt="Código">
+
+                <div class="contenedor-textos">
+                    <h3>React JS</h3>
+                    <p class="parrafo-cursos">Una vez que la tengas re clara con JavaScript, es la hora de aprender a usar su librería más popular como lo es React. Podrás hacer tu sitio mucho más eficiente, rápido y además, con muchas más funcionalidades en tiempo real con menos código</p>
+                </div>
+            </div>
+        </div><!--Cierre padre contenedores-->
+    </section>
+
+    <footer>
+        <p>Sitio web creado en la comision 46850 de Coderhouse&copy;</p>
+    </footer>
+
+    <div class="redes-sociales">
+        <a href="https://api.whatsapp.com/send?phone=5491112345678" target="_blank">
+            <img src="img/whatsapp-icon.svg" alt="Icono" class="icono-redes">
+        </a>
+
+        <a href="https://www.facebook.com/" target="_blank">
+            <img src="img/facebook.svg" alt="Icono facebook" class="icono-redes">
+        </a>
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram.svg" alt="Icono instagram" class="icono-redes">
+        </a>
+
+        <a href="https://www.tiktok.com/" target="_blank">
+            <img src="img/tiktok-icon.svg" alt="Icono tik tok" class="icono-redes">
+        </a>
+    </div>
+
+    <!-- EL BODY CIERRA DESPUES DE LA ULTIMA ETIQUETA QUE MOSTRAMOS EN NUESTRO SITIO -->
+</body>
+</html>

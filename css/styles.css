@@ -1,0 +1,229 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: 'vogue';
+    src: url(../fuentes/Vogue.ttf);
+}
+@font-face {
+    font-family: 'spicy';
+    src: url(../fuentes/Spicy\ Pasta.ttf);
+}
+@font-face {
+    font-family: 'almendra';
+    src: url(../fuentes/AlmendraSC-Regular.ttf);
+}
+
+body{
+    background-image:url(../img/istockphoto-1170425306-612x612.jpg);
+}
+
+.img-logo{
+    width: 40px;
+    margin: 5px;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+a{
+    color: #dbfcff;
+    text-decoration: none;
+    font-family:'almendra';
+    font-size: 13px;
+}
+
+.section1-index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+    margin-top: -30px;
+    }
+.section1-index h1{
+    font-family: 'almendra';
+    font-size: 30px;
+    color:#bf9d60;
+    font-weight: 500;
+    position: relative;
+    top: 5px;
+    border-bottom: dashed 2px #a37f617f  ;
+}
+.section1-index h2{
+    font-family: 'almendra';
+    font-size: 20px;
+    color: #bf9d60;
+    font-weight: 400;
+}
+.section2-index{
+    margin-top: 70px;
+    gap: 5px;
+}
+
+#chef{
+    margin-left: 20px;
+    font-family: 'almendra';
+    color:#a37f617f;
+    position: relative;
+    top: 5px;
+}
+
+.chef-4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#chef-2 {
+    margin: 5px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.chef-img{
+    max-width: 100%;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.menu{
+    margin: 25px;
+    position: relative;
+    }
+
+.item-menu{
+    width:325px;
+    height: 217px;
+}
+
+.menu h2{
+    text-align: center;
+    font-family: 'almendra';
+    color: #bf9d60;
+}
+
+.titulo1-historia{
+    margin: 10px;
+    text-align: center;
+    color: #bf9d60;
+    font-family: 'almendra';
+    font-size: 27px;
+}
+
+.p1-historia{
+    margin: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.section1-historia{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-historia{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.section1-reservas{
+    margin: 15px;
+    text-align: center;
+    background-color:#a37f617f ;
+    background-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    }
+
+.form1-reservas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.boton{
+    margin-top: 20px;
+}
+.item2-reservas{
+    width: 200px;
+    justify-content: center;
+    border-radius: 5px;
+    border: 000;
+}
+.item-reservas{
+    font-family: 'almendra';
+}
+.titulo1-reservas{
+    font-family: 'vogue';
+    position: relative;;
+    top: 5px;
+}
+
+.boton{
+    background-color:rgba(3, 3, 3, 0.822);
+    color:#a37f617f ;
+    font-family: 'alemendra';
+    border-radius: 10px;
+    width: 120px;
+    position: relative;
+    bottom: 5px;
+}
+
+#section1-contacto{
+    background-image: url(../img/6015953.jpg);
+    background-repeat: no-repeat;
+    width: 330px;
+    background-size: 330px;
+    opacity: .9;
+    height: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.item1-contacto{
+    position: relative;
+    bottom: 20px;
+    font-family: 'almendra';
+    color: #bf9d60;
+}
+.item2-contacto, .item3-contacto, .item4-contacto, .item5-contacto{
+    font-family: 'vogue';
+}
+
+
+
+.navbar {
+    background-color:#a37f617f;
+
+}
+.navbar-toggler{
+    color:rgba(0, 0, 0, 0.303) ;
+    border: #dbfcff;
+}
+.menu-lo{
+    font-family: 'almendra';
+    font-size: 20px;
+    color:#a37f617f ;
+}
+
+.nav-item:hover{
+    background-color:#a37f617f ;
+    transition: background-color 0.5s;
+}
+
+
