@@ -4,24 +4,21 @@
     margin: 0px;
 }
 @font-face {
-    font-family: 'vogue';
-    src: url(../fuentes/Vogue.ttf);
-}
-@font-face {
-    font-family: 'spicy';
-    src: url(../fuentes/Spicy\ Pasta.ttf);
-}
-@font-face {
     font-family: 'almendra';
     src: url(../fuentes/AlmendraSC-Regular.ttf);
 }
+@font-face{
+    font-family:'geraldine';
+    src: url(../fuentes/Geraldine\ Regular.ttf);
+}
+
 
 body{
     background-image:url(../img/istockphoto-1170425306-612x612.jpg);
 }
 
 .img-logo{
-    width: 9px;
+    width: 30px;
     margin: 5px;
 }
 ul{
@@ -30,9 +27,8 @@ ul{
     list-style-type: none;
 }
 a{
-    color: #dbfcff;
     text-decoration: none;
-    font-family:'almendra';
+    font-family:'geraldine';
     font-size: 13px;
 }
 
@@ -42,16 +38,14 @@ a{
     justify-content: center;
     align-items: center;
     height: 570px;
-    margin-top: -30px;
+    margin-top: -36px;
     }
 .section1-index h1{
     font-family: 'almendra';
     font-size: 30px;
     color:#bf9d60;
-    font-weight: 500;
     position: relative;
-    top: 5px;
-    border-bottom: dashed 2px #000000  ;
+    top: 9px;
 }
 .section1-index h2{
     font-family: 'almendra';
@@ -82,9 +76,11 @@ a{
 
 #chef-2 {
     margin: 5px;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
-}
+    font-family: 'geraldine';
+
+    }
 
 .chef-img{
     max-width: 100%;
