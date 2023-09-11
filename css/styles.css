@@ -21,7 +21,7 @@ body{
 }
 
 .img-logo{
-    width: 9px;
+    width: 35px;
     margin: 5px;
 }
 ul{
@@ -227,3 +227,19 @@ a{
 }
 
 
+
+
+
+
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center ;
+    gap: 20px;
+    }
+.menu img{
+    width: 300px;
+    height: 180px;
+    border-radius: 10px;
+}
