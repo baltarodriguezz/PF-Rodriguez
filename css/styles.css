@@ -79,7 +79,6 @@ a{
     font-size: 16px;
     text-align: center;
     font-family: 'geraldine';
-
     }
 
 .chef-img{
@@ -89,19 +88,20 @@ a{
     margin-bottom: 10px;
 }
 .menu{
-    margin: 25px;
+    margin: 15px;
     position: relative;
-    }
+}
 
-.item-menu{
-    width:325px;
-    height: 217px;
+.carousel-item img {
+    height: 200px;
+    width: 350px;
 }
 
 .menu h2{
-    text-align: center;
-    font-family: 'almendra';
-    color: #bf9d60;
+    font-family: 'geraldine';
+    color: #ffffff;
+    position: relative;
+    bottom: 35px;
 }
 
 .titulo1-historia{
@@ -221,5 +221,4 @@ a{
     background-color:#a37f617f ;
     transition: background-color 0.5s;
 }
-
 
