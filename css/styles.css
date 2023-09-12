@@ -114,6 +114,7 @@ a{
     margin: 10px;
     text-align: center;
     font-size: 15px;
+    font-family: 'geraldine';
 }
 
 .section1-historia{
@@ -220,10 +221,26 @@ a{
     transition: background-color 0.5s;
 }
 
-
-
-
-
+footer{
+    background-color: rgba(0, 0, 0, 0.871);
+    height: 35px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgba(255, 255, 255, 0.761);
+    font-family: 'geraldine';
+}
+footer h5 {
+    position: relative;
+    top: 2px;
+}
+footer hr{
+    color: rgba(255, 255, 255, 0.389);
+    font-size: 10px;
+    width: 70px;
+}
 
 .menu{
     display: flex;
