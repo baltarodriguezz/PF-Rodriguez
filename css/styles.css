@@ -91,7 +91,11 @@ a{
     margin: 15px;
     position: relative;
 }
-
+.menu h2{
+    text-align: center;
+    font-family: 'geraldine';
+    color:#a37f617f ;
+}
 .carousel-item img {
     height: 200px;
     width: 350px;
