@@ -103,11 +103,11 @@ a{
 
 
 .titulo1-historia{
-    margin: 10px;
+    margin: 10px 10px 0px 10px;
     text-align: center;
     color: #bf9d60;
     font-family: 'almendra';
-    font-size: 27px;
+    font-size: 40px;
 }
 
 .p1-historia{
@@ -140,17 +140,18 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 120px;
     }
 
 .form1-reservas{
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+    bottom: 30px;
 }
 
-.boton{
-    margin-top: 20px;
-}
+
 .item2-reservas{
     width: 200px;
     justify-content: center;
@@ -161,19 +162,27 @@ a{
     font-family: 'almendra';
 }
 .titulo1-reservas{
-    font-family: 'vogue';
+    font-family: 'geraldine';
+    color:#b09360;
+    background-color: #a37f617f;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow:5px 5px;
     position: relative;;
-    top: 5px;
+    bottom: 88px;
+    font-size: 50px;
+    font-weight: 300;
 }
 
 .boton{
     background-color:rgba(3, 3, 3, 0.822);
-    color:#a37f617f ;
+    color:#f5f5f57f ;
     font-family: 'alemendra';
     border-radius: 10px;
     width: 120px;
     position: relative;
-    bottom: 5px;
+    top: 15px;
+    left: 34px;
 }
 
 #section1-contacto{
