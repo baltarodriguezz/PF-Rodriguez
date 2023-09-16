@@ -34,13 +34,12 @@ a{
 img{
     max-width: 100%;
 }
-.section1-index{
+.section1-index{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 570px;
-    margin-top: -36px;
     }
 .section1-index h1{
     font-family: 'almendra';
@@ -59,6 +58,12 @@ img{
     margin-top: 70px;
     gap: 5px;
 }
+@media (min-width:768px) {
+    .chef-4 {
+        flex-direction: row;
+    }
+}
+
 
 #chef{
     margin-left: 20px;
@@ -75,6 +80,19 @@ img{
     align-items: center;
     gap: 10px;
 }
+@media (min-width:768px) {
+    .chef-4 {
+        display: grid;
+        grid-template-columns:2fr 1fr;
+        margin: 10px;
+    }
+}
+@media (min-width:1110px) {
+    .chef-4 {
+        gap: 100px;
+        margin: 10px;
+    }
+}
 
 #chef-2 {
     margin: 5px;
@@ -82,28 +100,38 @@ img{
     text-align: center;
     font-family: 'geraldine';
     }
-
+    @media (min-width:1110px) {
+        #chef-2 {
+            font-size: 18px;
+        }
+    }
 .chef-img{
     max-width: 100%;
     width: 300px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
+@media (min-width:768px) {
+    .chef-img {
+        width: 500px;
+    }
+}
+
+@media (min-width:1110px) {
+    .chef-img {
+        width: 350px;
+    }
+}
 .menu{
     margin: 15px;
     position: relative;
 }
+
 .menu h2{
     text-align: center;
     font-family: 'geraldine';
     color:#a37f617f ;
 }
-.carousel-item img {
-    height: 200px;
-    width: 350px;
-}
-
-
 .titulo1-historia{
     margin: 10px 10px 0px 10px;
     text-align: center;
@@ -125,7 +153,12 @@ img{
     flex-direction: column;
     align-items: center;
 }
-
+@media (min-width:768px){
+    .section1-historia img {
+        width: 520px;
+        height: 300px;
+    }
+}
 .img-historia{
     width: 300px;
     height: 200px;
@@ -143,14 +176,26 @@ img{
     align-items: center;
     flex-direction: column;
     margin-top: 120px;
+    height: 700px;
     }
-
+    @media (min-width:800px) {
+        .section1-reservas{
+            margin-left: 55px;
+            margin-right: 55px;
+        }
+        }
+        @media (min-width:1110px) {
+            .section1-reservas{
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+            }
 .form1-reservas{
     display: flex;
     flex-direction: column;
     text-align: center;
     position: relative;
-    bottom: 30px;
+    bottom: 160px;
 }
 
 
@@ -160,6 +205,16 @@ img{
     border-radius: 5px;
     border: 000;
 }
+@media (min-width:500px) {
+    .item2-reservas{
+        width: 400px;
+    }
+    }
+    @media (min-width:1000px) {
+        .item2-reservas{
+            width: 500px;
+        }
+        }
 .item-reservas{
     font-family: 'almendra';
 }
@@ -171,7 +226,7 @@ img{
     border-radius: 10px;
     box-shadow:5px 5px;
     position: relative;;
-    bottom: 88px;
+    bottom:230px;
     font-size: 50px;
     font-weight: 300;
 }
@@ -184,11 +239,23 @@ img{
     width: 120px;
     position: relative;
     top: 15px;
-    left: 34px;
+    left: 35px;
 }
+@media (min-width:500px) {
+    .boton{
+        width: 150px;
+        left: 120px;
+    }
+    }
+    @media (min-width:1000px) {
+        .boton{
+            width: 170px;
+            left: 166px;
+        }
+        }
 
 #section1-contacto{
-    background-image: url(../img/fondo2.jpg);
+    background-color: #a37f617f;
     background-repeat: no-repeat;
     background-size: cover;
     height: 250px;
@@ -244,6 +311,11 @@ img{
     background-color:#a37f617f;
 
 }
+@media (min-width:1000px){
+    .navbar{
+        gap: 100px;
+    }
+}
 .navbar-toggler{
     color:rgba(0, 0, 0, 0.303) ;
     border: #dbfcff;
@@ -258,7 +330,10 @@ img{
     background-color:#a37f617f ;
     transition: background-color 0.5s;
 }
-
+.container-fluid{
+    display: flex;
+    justify-content: space-around;
+}
 footer{
     background-color: rgba(0, 0, 0, 0.871);
     height: 35px;
@@ -288,10 +363,31 @@ footer hr{
     align-items:center ;
     gap: 20px;
     }
+    @media (min-width:768px) {
+        .menu {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            text-align: center;
+            
+        }
+    }
+    @media (min-width:1110px) {
+        .menu {
+            display: grid;
+            grid-template-columns:3fr 3fr 3fr;
+            text-align: center;
+            
+        }
+    }
 .menu img{
     width: 300px;
     height: 180px;
     border-radius: 10px;
+}
+@media (min-width:1110px) {
+    .menu img {
+        width: 350px;
+    }
 }
 .botonss{
     background-color:#b09360;
