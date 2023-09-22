@@ -79,6 +79,10 @@ footer hr {
   width: 70px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .section1-index {
   display: flex;
   flex-direction: column;
@@ -295,6 +299,7 @@ footer hr {
 }
 
 .card-img-top {
+  max-width: 100%;
   width: 288px;
   height: 180px;
   margin-bottom: 10px;
@@ -306,10 +311,9 @@ footer hr {
 }
 
 .container-cards {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
-  margin-top: 20px;
 }
 
 #entradas:checked ~ .container-cards .entrada,
@@ -322,10 +326,9 @@ footer hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 300px;
-  margin: 0 auto;
+  margin-left: 350px;
   background-color: rgba(0, 0, 0, 0.842);
-  border: solid #b09360 10px;
+  bottom: 1400px;
 }
 
 .card-title, .card-text {
@@ -352,8 +355,10 @@ footer hr {
 @media (min-width: 1110px) {
   .container-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
     text-align: center;
+    bottom: 500px;
   }
 }
 .container-opciones img {
@@ -392,17 +397,28 @@ footer hr {
   color: rgba(163, 127, 97, 0.4980392157);
 }
 
-#entradas:checked ~ .container-opciones .label-entradas,
-#carnes:checked ~ .container-opciones .label-carnes,
-#pastas:checked ~ .container-opciones .label-pastas,
-#pescados:checked ~ .container-opciones .label-pescados,
-#ensaladas:checked ~ .container-opciones .label-ensaladas,
-#postres:checked ~ .container-opciones .label-postres,
-#bebidas:checked ~ .container-opciones .label-bebidas {
-  margin: 10px;
-  border-radius: 10px;
-  background-color: rgba(163, 127, 97, 0.368627451);
-  height: 290px;
+#entradas:checked ~ .container-opciones,
+#carnes:checked ~ .container-opciones,
+#pastas:checked ~ .container-opciones,
+#pescados:checked ~ .container-opciones,
+#postres:checked ~ .container-opciones,
+#bebidas:checked ~ .container-opciones,
+#ensaladas:checked ~ .container-opciones {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  align-items: flex-start;
+}
+
+#entradas:checked ~ .container-opciones img,
+#carnes:checked ~ .container-opciones img,
+#pastas:checked ~ .container-opciones img,
+#pescados:checked ~ .container-opciones img,
+#postres:checked ~ .container-opciones img,
+#bebidas:checked ~ .container-opciones img,
+#ensaladas:checked ~ .container-opciones img {
+  width: 300px;
+  height: 150px;
 }
 
 #section1-contacto {
