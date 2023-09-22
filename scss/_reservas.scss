@@ -1,0 +1,90 @@
+.section1-reservas{
+    margin: 15px;
+    text-align: center;
+    background-color:#a37f617f ;
+    background-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    
+    }
+    @media (min-width:800px) {
+        .section1-reservas{
+            margin-left: 55px;
+            margin-right: 55px;
+        }
+        }
+        @media (min-width:1110px) {
+            .section1-reservas{
+                margin-left: 150px;
+                margin-right: 150px;
+            }
+            }
+.form1-reservas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    bottom: 37px;
+    gap: 5px;
+}
+
+
+.item2-reservas{
+    width: 200px;
+    justify-content: center;
+    border-radius: 5px;
+    border: 000;
+}
+@media (min-width:500px) {
+    .item2-reservas{
+        width: 400px;
+    }
+    }
+    @media (min-width:1000px) {
+        .item2-reservas{
+            width: 500px;
+        }
+        }
+.item-reservas{
+    font-family: 'almendra';
+}
+.titulo1-reservas{
+    font-family: 'geraldine';
+    color:#b09360;
+    background-color: #a37f617f;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow:5px 5px;
+    font-size: 50px;
+    font-weight: 300;
+    position: relative;
+    bottom: 88px;
+}
+
+.boton{
+    background-color:rgba(3, 3, 3, 0.822);
+    color:#f5f5f57f ;
+    font-family: 'alemendra';
+    border-radius: 10px;
+    width: 120px;
+    position: relative;
+    top: 15px;
+    left: 35px;
+}
+@media (min-width:500px) {
+    .boton{
+        width: 150px;
+        left: 120px;
+    }
+    }
+    @media (min-width:1000px) {
+        .boton{
+            width: 170px;
+            left: 166px;
+        }
+    }

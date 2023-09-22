@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: 'almendra';
+    src: url(../fuentes/AlmendraSC-Regular.ttf);
+}
+@font-face{
+    font-family:'geraldine';
+    src: url(../fuentes/Geraldine\ Regular.ttf);
+}
+
+body{
+    background-image:url(../img/istockphoto-1170425306-612x612.jpg);
+}
+
+.img-logo{
+    width: 35px;
+    margin: 5px;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family:'geraldine';
+    font-size: 13px;
+}

@@ -1,0 +1,83 @@
+.section1-index{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+
+    h1{
+    font-family: 'almendra';
+    font-size: 30px;
+    color:#bf9d60;
+    position: relative;
+    top: 5px;
+}
+    h2{
+    font-family: 'almendra';
+    font-size: 20px;
+    color: #bf9d60;
+    font-weight: 400;
+}
+}
+.section2-index{
+    margin-top: 70px;
+    gap: 5px;
+    
+    h2 { 
+    margin-left: 20px;
+    font-family: 'almendra';
+    color:#a37f617f;
+    position: relative;
+    top: 5px;
+}
+}
+.chef-4 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+@media (min-width:768px) {
+    .chef-4 {
+        display: grid;
+        grid-template-columns:2fr 1fr;
+        margin: 10px;
+    }
+}
+@media (min-width:1110px) {
+    .chef-4 {
+        gap: 100px;
+        margin: 10px;
+    }
+}
+
+#chef-2 {
+    margin: 5px;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'geraldine';
+    }
+    @media (min-width:1110px) {
+        #chef-2 {
+            font-size: 18px;
+        }
+    }
+.chef-img{
+    max-width: 100%;
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+@media (min-width:768px) {
+    .chef-img {
+        width: 500px;
+    }
+}
+
+@media (min-width:1110px) {
+    .chef-img {
+        width: 350px;
+    }
+}
+

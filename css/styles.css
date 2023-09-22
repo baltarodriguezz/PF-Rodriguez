@@ -1,455 +1,246 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
 
-*{
-    padding: 0px;
-    margin: 0px;
+@font-face {
+  font-family: "almendra";
+  src: url(../fuentes/AlmendraSC-Regular.ttf);
 }
 @font-face {
-    font-family: 'almendra';
-    src: url(../fuentes/AlmendraSC-Regular.ttf);
+  font-family: "geraldine";
+  src: url(../fuentes/Geraldine\ Regular.ttf);
 }
-@font-face{
-    font-family:'geraldine';
-    src: url(../fuentes/Geraldine\ Regular.ttf);
-}
-
-
-body{
-    background-image:url(../img/istockphoto-1170425306-612x612.jpg);
+body {
+  background-image: url(../img/istockphoto-1170425306-612x612.jpg);
 }
 
-.img-logo{
-    width: 35px;
-    margin: 5px;
-}
-ul{
-    display: flex;
-    gap: 10px;
-    list-style-type: none;
-}
-a{
-    text-decoration: none;
-    font-family:'geraldine';
-    font-size: 13px;
+.img-logo {
+  width: 35px;
+  margin: 5px;
 }
 
-.section1-index{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 570px;
-    }
-.section1-index h1{
-    font-family: 'almendra';
-    font-size: 30px;
-    color:#bf9d60;
-    position: relative;
-    top: 5px;
-}
-.section1-index h2{
-    font-family: 'almendra';
-    font-size: 20px;
-    color: #bf9d60;
-    font-weight: 400;
-}
-.section2-index{
-    margin-top: 70px;
-    gap: 5px;
-}
-@media (min-width:768px) {
-    .chef-4 {
-        flex-direction: row;
-    }
+ul {
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  font-family: "geraldine";
+  font-size: 13px;
+}
 
-#chef{
-    margin-left: 20px;
-    font-family: 'almendra';
-    color:#a37f617f;
-    position: relative;
-    top: 5px;
+.section1-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 570px;
+}
+.section1-index h1 {
+  font-family: "almendra";
+  font-size: 30px;
+  color: #bf9d60;
+  position: relative;
+  top: 5px;
+}
+.section1-index h2 {
+  font-family: "almendra";
+  font-size: 20px;
+  color: #bf9d60;
+  font-weight: 400;
+}
+
+.section2-index {
+  margin-top: 70px;
+  gap: 5px;
+}
+.section2-index h2 {
+  margin-left: 20px;
+  font-family: "almendra";
+  color: rgba(163, 127, 97, 0.4980392157);
+  position: relative;
+  top: 5px;
 }
 
 .chef-4 {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-@media (min-width:768px) {
-    .chef-4 {
-        display: grid;
-        grid-template-columns:2fr 1fr;
-        margin: 10px;
-    }
-}
-@media (min-width:1110px) {
-    .chef-4 {
-        gap: 100px;
-        margin: 10px;
-    }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
+@media (min-width: 768px) {
+  .chef-4 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 10px;
+  }
+}
+@media (min-width: 1110px) {
+  .chef-4 {
+    gap: 100px;
+    margin: 10px;
+  }
+}
 #chef-2 {
-    margin: 5px;
-    font-size: 16px;
-    text-align: center;
-    font-family: 'geraldine';
-    }
-    @media (min-width:1110px) {
-        #chef-2 {
-            font-size: 18px;
-        }
-    }
-.chef-img{
-    max-width: 100%;
-    width: 300px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-@media (min-width:768px) {
-    .chef-img {
-        width: 500px;
-    }
+  margin: 5px;
+  font-size: 16px;
+  text-align: center;
+  font-family: "geraldine";
 }
 
-@media (min-width:1110px) {
-    .chef-img {
-        width: 350px;
-    }
+@media (min-width: 1110px) {
+  #chef-2 {
+    font-size: 18px;
+  }
+}
+.chef-img {
+  max-width: 100%;
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-
-.titulo1-historia{
-    margin: 10px 10px 0px 10px;
-    text-align: center;
-    color: #bf9d60;
-    font-family: 'almendra';
-    font-size: 40px;
+@media (min-width: 768px) {
+  .chef-img {
+    width: 500px;
+  }
+}
+@media (min-width: 1110px) {
+  .chef-img {
+    width: 350px;
+  }
+}
+.titulo1-historia {
+  margin: 10px 10px 0px 10px;
+  text-align: center;
+  color: #bf9d60;
+  font-family: "almendra";
+  font-size: 40px;
 }
 
-.p1-historia{
-    margin: 10px;
-    text-align: center;
-    font-size: 15px;
-    font-family: 'geraldine';
+.p1-historia {
+  margin: 10px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "geraldine";
 }
 
-.section1-historia{
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-@media (min-width:768px){
-    .section1-historia img {
-        width: 520px;
-        height: 300px;
-    }
-}
-.img-historia{
-    width: 300px;
-    height: 200px;
-    border-radius: 20px;
-    margin: 10px;
+.section1-historia {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.section1-reservas{
-    margin: 15px;
-    text-align: center;
-    background-color:#a37f617f ;
-    background-size: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 500px;
-    position: relative;
-    top: 100px;
-    
-    }
-    @media (min-width:800px) {
-        .section1-reservas{
-            margin-left: 55px;
-            margin-right: 55px;
-        }
-        }
-        @media (min-width:1110px) {
-            .section1-reservas{
-                margin-left: 150px;
-                margin-right: 150px;
-            }
-            }
-.form1-reservas{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    position: relative;
-    bottom: 37px;
-    gap: 5px;
+@media (min-width: 768px) {
+  .section1-historia img {
+    width: 520px;
+    height: 300px;
+  }
+}
+.img-historia {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
-
-.item2-reservas{
-    width: 200px;
-    justify-content: center;
-    border-radius: 5px;
-    border: 000;
-}
-@media (min-width:500px) {
-    .item2-reservas{
-        width: 400px;
-    }
-    }
-    @media (min-width:1000px) {
-        .item2-reservas{
-            width: 500px;
-        }
-        }
-.item-reservas{
-    font-family: 'almendra';
-}
-.titulo1-reservas{
-    font-family: 'geraldine';
-    color:#b09360;
-    background-color: #a37f617f;
-    width: 300px;
-    border-radius: 10px;
-    box-shadow:5px 5px;
-    font-size: 50px;
-    font-weight: 300;
-    position: relative;
-    bottom: 88px;
+.section1-reservas {
+  margin: 15px;
+  text-align: center;
+  background-color: rgba(163, 127, 97, 0.4980392157);
+  background-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  position: relative;
+  top: 100px;
 }
 
-.boton{
-    background-color:rgba(3, 3, 3, 0.822);
-    color:#f5f5f57f ;
-    font-family: 'alemendra';
-    border-radius: 10px;
-    width: 120px;
-    position: relative;
-    top: 15px;
-    left: 35px;
+@media (min-width: 800px) {
+  .section1-reservas {
+    margin-left: 55px;
+    margin-right: 55px;
+  }
 }
-@media (min-width:500px) {
-    .boton{
-        width: 150px;
-        left: 120px;
-    }
-    }
-    @media (min-width:1000px) {
-        .boton{
-            width: 170px;
-            left: 166px;
-        }
-        }
-.footer{
-    position: relative;
-    top: 83px;
+@media (min-width: 1110px) {
+  .section1-reservas {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
 }
-#section1-contacto{
-    background-image: url(../img/fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-.item1-contacto{
-    font-family: 'almendra';
-    font-size: 30px;
-}
-.item2-contacto, .item3-contacto, .item4-contacto, .item5-contacto{
-    font-family: 'geraldine';
-    font-size: 15px;
-    color:#ffffff9f ;
-}
-#section2-contacto{
-    background-image: url(../img/21a232f7-bbd9-4787-8472-30f686861a5d.jpg);
-    margin: 10px;
-}
-.form1-contacto{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'geraldine';
-    text-align: center;
-}
-.form1-contacto h2{
-    font-size: 30px;
-    margin-top: 5px;
-    font-family: 'almendra';
-}
-.item6-contacto{
-    color: #f5f5f57f;
-}
-.item7-contacto{
-    width: 250px;
-    border-radius: 5px;
-    border:solid 3px #bf9d60;
-}
-.texto{
-    width: 250px;
-    height: 100px;
-    border-radius: 5px;
-    border:solid 3px #bf9d60;
+.form1-reservas {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  bottom: 37px;
+  gap: 5px;
 }
 
-
-.navbar {
-    background-color:#a37f617f;
-
-}
-@media (min-width:1000px){
-    .navbar{
-        gap: 100px;
-    }
-}
-.navbar-toggler{
-    color:rgba(0, 0, 0, 0.303) ;
-    border: #dbfcff;
+.item2-reservas {
+  width: 200px;
+  justify-content: center;
+  border-radius: 5px;
+  border: 0;
 }
 
-.nav-item:hover{
-    background-color:#a37f617f ;
-    transition: background-color 0.5s;
+@media (min-width: 500px) {
+  .item2-reservas {
+    width: 400px;
+  }
 }
-.container-fluid{
-    display: flex;
-    justify-content: space-around;
+@media (min-width: 1000px) {
+  .item2-reservas {
+    width: 500px;
+  }
 }
-footer{
-    background-color: rgba(0, 0, 0, 0.871);
-    height: 35px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    gap: 20px;
-    color: rgba(255, 255, 255, 0.761);
-    font-family: 'geraldine';
-}
-footer h5 {
-    position: relative;
-    top: 2px;
-    font-size: 12px;
-}
-footer hr{
-    color: rgba(255, 255, 255, 0.389);
-    font-size: 10px;
-    width: 70px;
-}
-.botonss{
-    background-color:#b09360;
-    margin: 10px;
-    width: 100px;
-}
-.card-img-top{
-    width: 288px;
-    height: 180px;
-    margin-bottom: 10px;
-    border: solid #b09360 10px;
+.item-reservas {
+  font-family: "almendra";
 }
 
-.carne, .entrada, .pasta, .pescado , .ensalada , .postre, .bebida{
-    display: none;
-}
-.container-cards{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 20px;
-}
-#entradas:checked ~ .container-cards .entrada,
-#carnes:checked ~ .container-cards .carne,
-#pastas:checked ~ .container-cards .pasta,
-#ensaladas:checked ~ .container-cards .ensalada,
-#pescados:checked ~ .container-cards .pescado,
-#postres:checked ~ .container-cards .postre,
-#bebidas:checked ~ .container-cards .bebida{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin: 0 auto;
-    background-color:rgba(0, 0, 0, 0.842) ;
-    border: solid #b09360 10px;
-}
-.card-title , .card-text{
-    color: white;
-    font-size: 16px;
-    font-family: 'geraldine';
-}
-.container-opciones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-@media (min-width:768px) {
-    .container-cards {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        text-align: center;
-    }
-}
-@media (min-width:1110px) {
-    .container-cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        text-align: center;
-    }
-}
-.container-opciones img {
-    width: 288px;
-    height: 180px;
-    border-radius: 10px;
-}
-@media (min-width:768px) {
-    .container-opciones {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-    }
-}
-@media (min-width:1110px) {
-    .container-opciones {
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-    }
-}
-.container-opciones h2{
-    text-align: center;
-    text-align: center;
-    font-family: 'geraldine';
-    color:#a37f617f ;
-    margin: 10px;
-}
-#entradas,#carnes, #pastas, #pescados, #ensaladas, #postres, #bebidas{
-    display: none;
-}
-.menu-lo{
-    font-family: 'almendra';
-    font-size: 20px;
-    color:#a37f617f ;
+.titulo1-reservas {
+  font-family: "geraldine";
+  color: #b09360;
+  background-color: rgba(163, 127, 97, 0.4980392157);
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 5px 5px;
+  font-size: 50px;
+  font-weight: 300;
+  position: relative;
+  bottom: 88px;
 }
 
-#entradas:checked ~ .container-opciones .label-entradas,
-#carnes:checked ~ .container-opciones .label-carnes,
-#pastas:checked ~ .container-opciones .label-pastas,
-#pescados:checked ~ .container-opciones .label-pescados,
-#ensaladas:checked ~ .container-opciones .label-ensaladas,
-#postres:checked ~ .container-opciones .label-postres,
-#bebidas:checked ~ .container-opciones .label-bebidas{
-    margin: 10px;
-    border-radius:  10px;
-    background-color: #a37f615e;
-    height: 290px;
+.boton {
+  background-color: rgba(3, 3, 3, 0.822);
+  color: rgba(245, 245, 245, 0.4980392157);
+  font-family: "alemendra";
+  border-radius: 10px;
+  width: 120px;
+  position: relative;
+  top: 15px;
+  left: 35px;
 }
+
+@media (min-width: 500px) {
+  .boton {
+    width: 150px;
+    left: 120px;
+  }
+}
+@media (min-width: 1000px) {
+  .boton {
+    width: 170px;
+    left: 166px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
