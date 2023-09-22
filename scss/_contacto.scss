@@ -1,0 +1,54 @@
+#section1-contacto{
+    background-image: url(../img/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.item1-contacto{
+    font-family: 'almendra';
+    font-size: 30px;
+}
+.item2-contacto, .item3-contacto, .item4-contacto, .item5-contacto{
+    font-family: 'geraldine';
+    font-size: 15px;
+    color:#ffffff9f ;
+}
+#section2-contacto{
+    background-image: url(../img/21a232f7-bbd9-4787-8472-30f686861a5d.jpg);
+    margin: 10px;
+}
+.form1-contacto{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'geraldine';
+    text-align: center;
+    
+    h2{
+    font-size: 30px;
+    margin-top: 5px;
+    font-family: 'almendra';
+}
+.item6-contacto{
+    color: #f5f5f57f;
+}
+}
+
+.item7-contacto{
+    width: 250px;
+    border-radius: 5px;
+    border:solid 3px #bf9d60;
+}
+.texto{
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+    border:solid 3px #bf9d60;
+}
+

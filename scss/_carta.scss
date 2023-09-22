@@ -1,0 +1,102 @@
+.card-img-top{
+    width: 288px;
+    height: 180px;
+    margin-bottom: 10px;
+    border: solid #b09360 10px;
+}
+
+.carne, .entrada, .pasta, .pescado , .ensalada , .postre, .bebida{
+    display: none;
+}
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+#entradas:checked ~ .container-cards .entrada,
+#carnes:checked ~ .container-cards .carne,
+#pastas:checked ~ .container-cards .pasta,
+#ensaladas:checked ~ .container-cards .ensalada,
+#pescados:checked ~ .container-cards .pescado,
+#postres:checked ~ .container-cards .postre,
+#bebidas:checked ~ .container-cards .bebida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    margin: 0 auto;
+    background-color:rgba(0, 0, 0, 0.842) ;
+    border: solid #b09360 10px;
+}
+.card-title , .card-text{
+    color: white;
+    font-size: 16px;
+    font-family: 'geraldine';
+}
+.container-opciones{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+@media (min-width:768px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        text-align: center;
+    }
+}
+@media (min-width:1110px) {
+    .container-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+}
+.container-opciones img {
+    width: 288px;
+    height: 180px;
+    border-radius: 10px;
+}
+@media (min-width:768px) {
+    .container-opciones {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+}
+@media (min-width:1110px) {
+    .container-opciones {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+    }
+}
+.container-opciones h2{
+    text-align: center;
+    text-align: center;
+    font-family: 'geraldine';
+    color:#a37f617f ;
+    margin: 10px;
+}
+#entradas,#carnes, #pastas, #pescados, #ensaladas, #postres, #bebidas{
+    display: none;
+}
+.menu-lo{
+    font-family: 'almendra';
+    font-size: 20px;
+    color:#a37f617f ;
+}
+
+#entradas:checked ~ .container-opciones .label-entradas,
+#carnes:checked ~ .container-opciones .label-carnes,
+#pastas:checked ~ .container-opciones .label-pastas,
+#pescados:checked ~ .container-opciones .label-pescados,
+#ensaladas:checked ~ .container-opciones .label-ensaladas,
+#postres:checked ~ .container-opciones .label-postres,
+#bebidas:checked ~ .container-opciones .label-bebidas{
+    margin: 10px;
+    border-radius:  10px;
+    background-color: #a37f615e;
+    height: 290px;
+}

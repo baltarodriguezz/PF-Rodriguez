@@ -32,6 +32,53 @@ a {
   font-size: 13px;
 }
 
+.navbar {
+  background-color: rgba(163, 127, 97, 0.4980392157);
+}
+
+@media (min-width: 1000px) {
+  .navbar {
+    gap: 100px;
+  }
+}
+.navbar-toggler {
+  color: rgba(0, 0, 0, 0.303);
+  border: #dbfcff;
+}
+
+.nav-item:hover {
+  background-color: rgba(163, 127, 97, 0.4980392157);
+  transition: background-color 0.5s;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.871);
+  height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 20px;
+  color: rgba(255, 255, 255, 0.761);
+  font-family: "geraldine";
+}
+footer h5 {
+  position: relative;
+  top: 2px;
+  font-size: 12px;
+}
+
+footer hr {
+  color: rgba(255, 255, 255, 0.389);
+  font-size: 10px;
+  width: 70px;
+}
+
 .section1-index {
   display: flex;
   flex-direction: column;
@@ -241,6 +288,179 @@ a {
     width: 170px;
     left: 166px;
   }
+}
+.footer {
+  position: relative;
+  top: 83px;
+}
+
+.card-img-top {
+  width: 288px;
+  height: 180px;
+  margin-bottom: 10px;
+  border: solid #b09360 10px;
+}
+
+.carne, .entrada, .pasta, .pescado, .ensalada, .postre, .bebida {
+  display: none;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#entradas:checked ~ .container-cards .entrada,
+#carnes:checked ~ .container-cards .carne,
+#pastas:checked ~ .container-cards .pasta,
+#ensaladas:checked ~ .container-cards .ensalada,
+#pescados:checked ~ .container-cards .pescado,
+#postres:checked ~ .container-cards .postre,
+#bebidas:checked ~ .container-cards .bebida {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.842);
+  border: solid #b09360 10px;
+}
+
+.card-title, .card-text {
+  color: white;
+  font-size: 16px;
+  font-family: "geraldine";
+}
+
+.container-opciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+}
+@media (min-width: 1110px) {
+  .container-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+  }
+}
+.container-opciones img {
+  width: 288px;
+  height: 180px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .container-opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1110px) {
+  .container-opciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.container-opciones h2 {
+  text-align: center;
+  text-align: center;
+  font-family: "geraldine";
+  color: rgba(163, 127, 97, 0.4980392157);
+  margin: 10px;
+}
+
+#entradas, #carnes, #pastas, #pescados, #ensaladas, #postres, #bebidas {
+  display: none;
+}
+
+.menu-lo {
+  font-family: "almendra";
+  font-size: 20px;
+  color: rgba(163, 127, 97, 0.4980392157);
+}
+
+#entradas:checked ~ .container-opciones .label-entradas,
+#carnes:checked ~ .container-opciones .label-carnes,
+#pastas:checked ~ .container-opciones .label-pastas,
+#pescados:checked ~ .container-opciones .label-pescados,
+#ensaladas:checked ~ .container-opciones .label-ensaladas,
+#postres:checked ~ .container-opciones .label-postres,
+#bebidas:checked ~ .container-opciones .label-bebidas {
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgba(163, 127, 97, 0.368627451);
+  height: 290px;
+}
+
+#section1-contacto {
+  background-image: url(../img/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.item1-contacto {
+  font-family: "almendra";
+  font-size: 30px;
+}
+
+.item2-contacto, .item3-contacto, .item4-contacto, .item5-contacto {
+  font-family: "geraldine";
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6235294118);
+}
+
+#section2-contacto {
+  background-image: url(../img/21a232f7-bbd9-4787-8472-30f686861a5d.jpg);
+  margin: 10px;
+}
+
+.form1-contacto {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "geraldine";
+  text-align: center;
+}
+.form1-contacto h2 {
+  font-size: 30px;
+  margin-top: 5px;
+  font-family: "almendra";
+}
+.form1-contacto .item6-contacto {
+  color: rgba(245, 245, 245, 0.4980392157);
+}
+
+.item7-contacto {
+  width: 250px;
+  border-radius: 5px;
+  border: solid 3px #bf9d60;
+}
+
+.texto {
+  width: 250px;
+  height: 100px;
+  border-radius: 5px;
+  border: solid 3px #bf9d60;
 }
 
 /*# sourceMappingURL=styles.css.map */
