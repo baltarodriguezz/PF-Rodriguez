@@ -1,39 +1,13 @@
-.card-img-top{
-    max-width: 100%;
-    width: 288px;
-    height: 180px;
-    margin-bottom: 10px;
-    border: solid #b09360 10px;
-}
-
-.carne, .entrada, .pasta, .pescado , .ensalada , .postre, .bebida{
+#entradas,#carnes, #pastas, #pescados, #ensaladas, #postres, #bebidas{
     display: none;
 }
-.container-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 20px;
-}
-#entradas:checked ~ .container-cards .entrada,
-#carnes:checked ~ .container-cards .carne,
-#pastas:checked ~ .container-cards .pasta,
-#ensaladas:checked ~ .container-cards .ensalada,
-#pescados:checked ~ .container-cards .pescado,
-#postres:checked ~ .container-cards .postre,
-#bebidas:checked ~ .container-cards .bebida{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 350px;
-    background-color:rgba(0, 0, 0, 0.842) ;
-    bottom: 1400px;
+
+
+.carne, .entrada, .pasta, .pescado , .ensalada , .postre, .bebida,
+.carne2, .entrada2, .pasta2, .pescado2 , .ensalada2 , .postre2, .bebida2{
+    display: none;
 }
 
-.card-title , .card-text{
-    color: white;
-    font-size: 16px;
-    font-family: 'geraldine';
-}
 .container-opciones{
     display: flex;
     flex-direction: column;
@@ -41,6 +15,8 @@
     justify-content: center;
     text-align: center;
 }
+
+
 @media (min-width:768px) {
     .container-cards {
         display: grid;
@@ -50,18 +26,14 @@
 }
 @media (min-width:1110px) {
     .container-cards {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-column-gap: 0px;
-        text-align: center;
-        bottom: 500px;
-        
-    }
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
 }
 .container-opciones img {
-    width: 288px;
-    height: 180px;
-    border-radius: 10px;
+    width: 70px;
+    height: 60px;
 }
 @media (min-width:768px) {
     .container-opciones {
@@ -74,21 +46,6 @@
         display: grid;
         grid-template-columns:1fr 1fr 1fr;
     }
-}
-.container-opciones h2{
-    text-align: center;
-    text-align: center;
-    font-family: 'geraldine';
-    color:#a37f617f ;
-    margin: 10px;
-}
-#entradas,#carnes, #pastas, #pescados, #ensaladas, #postres, #bebidas{
-    display: none;
-}
-.menu-lo{
-    font-family: 'almendra';
-    font-size: 20px;
-    color:#a37f617f ;
 }
 
 
@@ -105,14 +62,65 @@
     align-items: flex-start;
 }
 
-#entradas:checked ~ .container-opciones img ,
-#carnes:checked ~ .container-opciones img ,
-#pastas:checked ~ .container-opciones img ,
-#pescados:checked ~ .container-opciones img ,
-#postres:checked ~ .container-opciones img ,
-#bebidas:checked ~ .container-opciones  img ,
-#ensaladas:checked ~ .container-opciones img {
-    width: 300px;
-    height: 150px;
+#entradas:checked ~ .container-cards .entrada,
+#carnes:checked ~ .container-cards .carne,
+#pastas:checked ~ .container-cards .pasta,
+#ensaladas:checked ~ .container-cards .ensalada,
+#pescados:checked ~ .container-cards .pescado,
+#postres:checked ~ .container-cards .postre,
+#bebidas:checked ~ .container-cards .bebida{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 350px;
+    background-color:rgba(0, 0, 0, 0.842);
+    bottom: 1535px;
+    position: relative;
+    left: 100px;
 }
 
+#entradas:checked ~ .container-cards .entrada2,
+#carnes:checked ~ .container-cards .carne2,
+#pastas:checked ~ .container-cards .pasta2,
+#ensaladas:checked ~ .container-cards .ensalada2,
+#pescados:checked ~ .container-cards .pescado2,
+#postres:checked ~ .container-cards .postre2,
+#bebidas:checked ~ .container-cards .bebida2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 350px;
+    background-color:rgba(0, 0, 0, 0.842);
+    bottom: 1535px;
+    position: relative;
+    right: 80px;
+}
+
+#entradas:checked ~ .container-cards,
+#carnes:checked ~ .container-cards,
+#pastas:checked ~ .container-cards,
+#ensaladas:checked ~ .container-cards,
+#pescados:checked ~ .container-cards,
+#postres:checked ~ .container-cards,
+#bebidas:checked ~ .container-cards{
+    gap: 10px;
+}
+
+.card-title , .card-text{
+    color: white;
+    font-size: 14px;
+    font-family: 'geraldine';
+    text-align: center;
+    align-items: center;
+}
+
+
+.card-img-top{
+    max-width: 100%;
+    height: 180px;
+}
+
+.card .entrada2{
+    position: relative;
+    left: 500px;
+}
