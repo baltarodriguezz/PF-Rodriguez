@@ -13,6 +13,8 @@
 
 body{
     background-image:url(../img/istockphoto-1170425306-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .img-logo{
@@ -78,4 +80,10 @@ footer hr{
 
 img{
     max-width: 100%;
+}
+
+.menu-lo{
+    font-family: 'almendra';
+    font-size: 20px;
+    color:#a37f617f ;
 }
