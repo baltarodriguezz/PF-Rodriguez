@@ -2,11 +2,123 @@
     display: none;
 }
 
-.container-opciones h2{
+.carne, .entrada, .pasta, .pescado , .ensalada , .postre, .bebida{
+    display: none;
+}
+
+
+
+.container-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+#entradas:checked ~ .container-opciones .label-entradas{
+    position: relative;
+    bottom: 2225px;
+}
+#entradas:checked ~ .container-cards .entrada {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    position: relative;
+    bottom: 770px;
+}
+
+#entradas:checked ~ .container-opciones{
+    position: relative;
+    top: 2226px;
+}
+@media (min-width:768px) {
+    .menu{
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+    }
+}
+@media (min-width:768px) {
+    .footer-menu{
+        width: 400px;
+    }
+}
+@media (min-width:1110px) {
+    #entradas:checked ~ .container-cards{
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        justify-items: center;
+        position: relative;
+        top: 500px;
+    }
+}
+@media (min-width:768px) {
+    #entradas:checked ~ .container-opciones {
+        align-items: flex-start;
+        top: 0px;
+        justify-items: center;
+        }
+}
+
+@media (min-width:1110px) {
+    #entradas:checked ~ .container-opciones {
+        display: grid;
+
+}
+}
+
+@media (min-width:768px) {
+    #entradas:checked ~ .container-opciones .label-entradas{
+        position: relative;
+        top: 0px;
+    }
+}
+
+.img-label {
+    width: 100px; height: 100px;
+    transition: all 1s;       
+}
+.img-label:hover {
+    transform: scale(1.3);
+    filter:drop-shadow(0 0 15px  #00000069);
+}
+
+.card {
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.5s;
+    background-color: black;
+}
+
+.card{
+    display: none
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    color: #ffffffcb;
+    font-size: 20px;
+    font-family: 'almendra';
+    text-align: center;
+}
+
+.card-text {
+    color: #ddbf88;
     font-family: 'geraldine';
-    color:#a37f617f ;
-    margin: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.card-img-top {
+    max-width: 100%;
 }
 
 .card-img-top{
@@ -15,17 +127,24 @@
 }
 
 
-.container-cards{
+.boton-menu {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    width: 85px;
+    height: 25px;
+    background-color: black;
+    color: black;
+    font-family: 'geraldine';
+    transition: background-color 0.1s;
+    position: relative;
+    left: 83px;
+    border-radius: 5px;
 }
 
-.carne, .entrada, .pasta, .pescado , .ensalada , .postre, .bebida,
-.carne2, .entrada2, .pasta2, .pescado2 , .ensalada2 , .postre2, .bebida2{
-    display: none;
+.boton-menu:hover {
+    background-color: #ffffffcb;
+    transition-delay: 0.1s;
 }
 
 .container-opciones{
@@ -38,323 +157,13 @@
     margin: 20px;
 }
 
-
+.container-opciones h2{
+    text-align: center;
+    font-family: 'geraldine';
+    color:#a37f617f ;
+    margin: 5px;
+}
 .container-opciones img {
     width: 70px;
     height: 60px;
-}
-@media (min-width:768px) {
-    .container-opciones {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-    }
-}
-@media (min-width:1110px) {
-    .container-opciones {
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-    }
-}
-
-
-#entradas:checked ~ .container-opciones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 2385px;
-    margin-bottom: 60px;
-}
-
-#entradas:checked ~ .container-opciones .label-entradas {
-    position: relative;
-    bottom: 2380px;
-}
-.img-label {
-    width: 100px; height: 100px;
-    transition: all 1s;       
-}
-.img-label:hover {
-    transform: scale(1.3);
-    filter:drop-shadow(0 0 15px  #00000069);
-}
-
-
-#carnes:checked ~ .container-opciones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 1940px;
-    margin-bottom: 60px;
-}
-
-#carnes:checked ~ .container-opciones .label-carnes {
-    position: relative;
-    bottom: 2050px;
-}
-
-#carnes:checked ~ .container-opciones .label-entradas{
-    position: relative;
-    top: 140px;
-}
-
-#pastas:checked ~ .container-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 2290px;
-    margin-bottom: 60px;
-}
-
-
-#pastas:checked ~ .container-opciones .label-pastas {
-    position: relative;
-    bottom: 2535px;
-}
-
-#pastas:checked ~ .container-opciones .label-entradas {
-    position: relative;
-    top: 125px;
-}
-
-#pastas:checked ~ .container-opciones .label-carnes {
-    position: relative;
-    top: 130px;
-}
-
-#ensaladas:checked ~ .container-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 2206px;
-    margin-bottom: 60px;
-}
-
-
-#ensaladas:checked ~ .container-opciones .label-ensaladas {
-    position: relative;
-    bottom: 2580px;
-}
-
-#ensaladas:checked ~ .container-opciones .label-entradas {
-    position: relative;
-    top: 125px;
-}
-
-#ensaladas:checked ~ .container-opciones .label-carnes {
-    position: relative;
-    top: 130px;
-}
-
-#ensaladas:checked ~ .container-opciones .label-pastas {
-    position: relative;
-    top: 130px;
-}
-
-#pescados:checked ~ .container-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 2310px;
-    margin-bottom: 60px;
-}
-
-
-#pescados:checked ~ .container-opciones .label-pescados {
-    position: relative;
-    bottom: 2810px;
-}
-
-#pescados:checked ~ .container-opciones .label-entradas {
-    position: relative;
-    top: 125px;
-}
-
-#pescados:checked ~ .container-opciones .label-carnes {
-    position: relative;
-    top: 130px;
-}
-
-#pescados:checked ~ .container-opciones .label-pastas {
-    position: relative;
-    top: 130px;
-}
-
-#pescados:checked ~ .container-opciones .label-ensaladas {
-    position: relative;
-    top: 130px;
-}
-
-#postres:checked ~ .container-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 2225px;
-    margin-bottom: 60px;
-}
-
-
-#postres:checked ~ .container-opciones .label-postres {
-    position: relative;
-    bottom: 2860px;
-}
-
-#postres:checked ~ .container-opciones .label-entradas {
-    position: relative;
-    top: 125px;
-}
-
-#postres:checked ~ .container-opciones .label-carnes {
-    position: relative;
-    top: 130px;
-}
-
-#postres:checked ~ .container-opciones .label-pastas {
-    position: relative;
-    top: 130px;
-}
-
-#postres:checked ~ .container-opciones .label-ensaladas {
-    position: relative;
-    top: 130px;
-}
-#postres:checked ~ .container-opciones .label-pescados {
-    position: relative;
-    top: 130px;
-}
-
-#bebidas:checked ~ .container-opciones {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    top: 2293px;
-    margin-bottom: 60px;
-}
-
-
-#bebidas:checked ~ .container-opciones .label-bebidas {
-    position: relative;
-    bottom: 3055px;
-}
-
-#bebidas:checked ~ .container-opciones .label-entradas {
-    position: relative;
-    top: 125px;
-}
-
-#bebidas:checked ~ .container-opciones .label-carnes {
-    position: relative;
-    top: 130px;
-}
-
-#bebidas:checked ~ .container-opciones .label-pastas {
-    position: relative;
-    top: 130px;
-}
-
-#bebidas:checked ~ .container-opciones .label-ensaladas {
-    position: relative;
-    top: 130px;
-}
-#bebidas:checked ~ .container-opciones .label-pescados {
-    position: relative;
-    top: 130px;
-}
-
-#bebidas:checked ~ .container-opciones .label-postres {
-    position: relative;
-    top: 130px;
-}
-#entradas:checked ~ .container-cards .entrada,
-#carnes:checked ~ .container-cards .carne,
-#pastas:checked ~ .container-cards .pasta,
-#ensaladas:checked ~ .container-cards .ensalada,
-#pescados:checked ~ .container-cards .pescado,
-#postres:checked ~ .container-cards .postre,
-#bebidas:checked ~ .container-cards .bebida{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 770px;
-}
-
-#entradas:checked ~ .container-cards .entrada2,
-#carnes:checked ~ .container-cards .carne2,
-#pastas:checked ~ .container-cards .pasta2,
-#ensaladas:checked ~ .container-cards .ensalada2,
-#pescados:checked ~ .container-cards .pescado2,
-#postres:checked ~ .container-cards .postre2,
-#bebidas:checked ~ .container-cards .bebida2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    bottom: 770px;
-}
-
-#entradas:checked ~ .container-cards,
-#carnes:checked ~ .container-cards,
-#pastas:checked ~ .container-cards,
-#ensaladas:checked ~ .container-cards,
-#pescados:checked ~ .container-cards,
-#postres:checked ~ .container-cards,
-#bebidas:checked ~ .container-cards{
-    gap: 40px;
-}
-
-.card-title{
-    color: #ffffffcb;
-    font-size: 20px;
-    font-family: 'almendra';
-    text-align: center;
-    align-items: center;
-}
-.card-text{
-    color:#ddbf88;
-    font-family: 'geraldine';
-    text-align: center;
-    font-size: 14px;
-}
-
-.card-img-top{
-    max-width: 100%;
-    height: 180px;
-    transition: all 1s;
-}
-.card-img-top:hover{
-    transform: scale(1.1);
-    
-}
-
-.card-body{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.boton-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 85px;
-    height: 25px;
-    border-radius: 5px;
-    background-color: black;
-    color: black;
-    font-family: 'geraldine';
-    transition: background-color 0.5s;
-}
-
-.boton-menu:hover {
-    background-color: #ffffffcb;
-    transition-delay: 0.4s;
 }
