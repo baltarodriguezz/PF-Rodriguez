@@ -5,14 +5,25 @@
 .carne, .entrada, .pasta, .pescado , .ensalada , .postre, .bebida{
     display: none;
 }
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .card-img-top{
+    @include sizes(290px, 180px);
+ }
+ 
 
+.display{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 
 .container-cards{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .display;
     gap: 30px;
 
 }
@@ -21,10 +32,7 @@
     bottom: 2225px;
 }
 #entradas:checked ~ .container-cards .entrada {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    @extend .display;
     position: relative;
     bottom: 770px;
 }
@@ -33,48 +41,192 @@
     position: relative;
     top: 2226px;
 }
-@media (min-width:768px) {
-    .menu{
-        display: grid;
-        grid-template-columns: 1fr 7fr;
-    }
+
+#carnes:checked ~ .container-opciones .label-carnes{
+    position: relative;
+    bottom: 2000px;
 }
-@media (min-width:768px) {
-    .footer-menu{
-        width: 400px;
-    }
-}
-@media (min-width:1110px) {
-    #entradas:checked ~ .container-cards{
-        display: grid;
-        grid-template-columns:1fr 1fr 1fr;
-        justify-items: center;
-        position: relative;
-        top: 500px;
-    }
-}
-@media (min-width:768px) {
-    #entradas:checked ~ .container-opciones {
-        align-items: flex-start;
-        top: 0px;
-        justify-items: center;
-        }
+#carnes:checked ~ .container-cards .carne {
+    @extend .display;
+    text-align: center;
+    position: relative;
+    bottom: 770px;
 }
 
-@media (min-width:1110px) {
-    #entradas:checked ~ .container-opciones {
-        display: grid;
-
-}
+#carnes:checked ~ .container-opciones{
+    position: relative;
+    top: 1868px;
 }
 
-@media (min-width:768px) {
-    #entradas:checked ~ .container-opciones .label-entradas{
-        position: relative;
-        top: 0px;
-    }
+#carnes:checked ~ .container-opciones .label-entradas{
+    position: relative;
+    top: 140px;
+} 
+
+#pastas:checked ~ .container-opciones .label-pastas{
+    position: relative;
+    bottom: 2465px;
+}
+#pastas:checked ~ .container-cards .pasta{
+    @extend .display;
+    position: relative;
+    bottom: 770px;
 }
 
+#pastas:checked ~ .container-opciones{
+    position: relative;
+    top: 2200px;
+}
+
+#pastas:checked ~ .container-opciones .label-entradas{
+    position: relative;
+    top: 140px;
+} 
+#pastas:checked ~ .container-opciones .label-carnes{
+    position: relative;
+    top: 140px;
+} 
+#ensaladas:checked ~ .container-opciones .label-ensaladas{
+    position: relative;
+    bottom: 2500px;
+}
+#ensaladas:checked ~ .container-cards .ensalada{
+    @extend .display;
+    position: relative;
+    bottom: 770px;
+}
+
+#ensaladas:checked ~ .container-opciones{
+    position: relative;
+    top: 2117px;
+}
+
+#ensaladas:checked ~ .container-opciones .label-entradas{
+    position: relative;
+    top: 140px;
+} 
+#ensaladas:checked ~ .container-opciones .label-carnes{
+    position: relative;
+    top: 140px;
+} 
+#ensaladas:checked ~ .container-opciones .label-pastas{
+    position: relative;
+    top: 140px;
+} 
+
+
+#pescados:checked ~ .container-opciones .label-pescados{
+    position: relative;
+    bottom: 2737px;
+}
+#pescados:checked ~ .container-cards .pescado{
+    @extend .display;
+    position: relative;
+    bottom: 770px;
+}
+
+#pescados:checked ~ .container-opciones{
+    position: relative;
+    top: 2220px;
+}
+
+#pescados:checked ~ .container-opciones .label-entradas{
+    position: relative;
+    top: 140px;
+} 
+#pescados:checked ~ .container-opciones .label-carnes{
+    position: relative;
+    top: 140px;
+} 
+#pescados:checked ~ .container-opciones .label-pastas{
+    position: relative;
+    top: 140px;
+} 
+#pescados:checked ~ .container-opciones .label-ensaladas{
+    position: relative;
+    top: 140px;
+} 
+
+
+#postres:checked ~ .container-opciones .label-postres{
+    position: relative;
+    bottom: 2792px;
+}
+#postres:checked ~ .container-cards .postre{
+    @extend .display;
+    position: relative;
+    bottom: 770px;
+}
+
+#postres:checked ~ .container-opciones{
+    position: relative;
+    top: 2140px;
+}
+
+#postres:checked ~ .container-opciones .label-entradas{
+    position: relative;
+    top: 140px;
+} 
+#postres:checked ~ .container-opciones .label-carnes{
+    position: relative;
+    top: 140px;
+} 
+#postres:checked ~ .container-opciones .label-pastas{
+    position: relative;
+    top: 140px;
+} 
+#postres:checked ~ .container-opciones .label-ensaladas{
+    position: relative;
+    top: 140px;
+} 
+
+#postres:checked ~ .container-opciones .label-pescados{
+    position: relative;
+    top: 140px;
+} 
+
+
+
+#bebidas:checked ~ .container-opciones .label-bebidas{
+    position: relative;
+    bottom: 2990px;
+}
+#bebidas:checked ~ .container-cards .bebida{
+    @extend .display;
+    position: relative;
+    bottom: 770px;
+}
+
+#bebidas:checked ~ .container-opciones{
+    position: relative;
+    top: 2200px;
+}
+
+#bebidas:checked ~ .container-opciones .label-entradas{
+    position: relative;
+    top: 140px;
+} 
+#bebidas:checked ~ .container-opciones .label-carnes{
+    position: relative;
+    top: 140px;
+} 
+#bebidas:checked ~ .container-opciones .label-pastas{
+    position: relative;
+    top: 140px;
+} 
+#bebidas:checked ~ .container-opciones .label-ensaladas{
+    position: relative;
+    top: 140px;
+} 
+
+#bebidas:checked ~ .container-opciones .label-pescados{
+    position: relative;
+    top: 140px;
+}
+#bebidas:checked ~ .container-opciones .label-postres{
+    position: relative;
+    top: 140px;
+} 
 .img-label {
     width: 100px; height: 100px;
     transition: all 1s;       
@@ -86,10 +238,7 @@
 
 .card {
     width: 288px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    @extend .display;
     transition: transform 0.5s;
     background-color: black;
 }
@@ -121,10 +270,7 @@
     max-width: 100%;
 }
 
-.card-img-top{
-    width: 290px;
-    height: 180px;
-}
+
 
 
 .boton-menu {
@@ -148,9 +294,7 @@
 }
 
 .container-opciones{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @extend .display;
     justify-content: center;
     text-align: center;
     gap: 30px;
