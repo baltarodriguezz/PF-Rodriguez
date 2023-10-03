@@ -302,321 +302,48 @@ footer hr {
   top: 83px;
 }
 
-#entradas, #carnes, #pastas, #pescados, #ensaladas, #postres, #bebidas {
-  display: none;
-}
-
-.carne, .entrada, .pasta, .pescado, .ensalada, .postre, .bebida {
-  display: none;
-}
-
-.card-img-top {
-  height: 180px;
-  width: 290px;
-}
-
-.display, .container-opciones, .card, #bebidas:checked ~ .container-cards .bebida, #postres:checked ~ .container-cards .postre, #pescados:checked ~ .container-cards .pescado, #ensaladas:checked ~ .container-cards .ensalada, #pastas:checked ~ .container-cards .pasta, #carnes:checked ~ .container-cards .carne, #entradas:checked ~ .container-cards .entrada, .container-cards {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.container-cards {
-  gap: 30px;
-}
-
-#entradas:checked ~ .container-opciones .label-entradas {
-  position: relative;
-  bottom: 2225px;
-}
-
-#entradas:checked ~ .container-cards .entrada {
-  position: relative;
-  bottom: 770px;
-}
-
-#entradas:checked ~ .container-opciones {
-  position: relative;
-  top: 2226px;
-}
-
-#carnes:checked ~ .container-opciones .label-carnes {
-  position: relative;
-  bottom: 2000px;
-}
-
-#carnes:checked ~ .container-cards .carne {
-  text-align: center;
-  position: relative;
-  bottom: 770px;
-}
-
-#carnes:checked ~ .container-opciones {
-  position: relative;
-  top: 1868px;
-}
-
-#carnes:checked ~ .container-opciones .label-entradas {
-  position: relative;
-  top: 140px;
-}
-
-#pastas:checked ~ .container-opciones .label-pastas {
-  position: relative;
-  bottom: 2465px;
-}
-
-#pastas:checked ~ .container-cards .pasta {
-  position: relative;
-  bottom: 770px;
-}
-
-#pastas:checked ~ .container-opciones {
-  position: relative;
-  top: 2200px;
-}
-
-#pastas:checked ~ .container-opciones .label-entradas {
-  position: relative;
-  top: 140px;
-}
-
-#pastas:checked ~ .container-opciones .label-carnes {
-  position: relative;
-  top: 140px;
-}
-
-#ensaladas:checked ~ .container-opciones .label-ensaladas {
-  position: relative;
-  bottom: 2500px;
-}
-
-#ensaladas:checked ~ .container-cards .ensalada {
-  position: relative;
-  bottom: 770px;
-}
-
-#ensaladas:checked ~ .container-opciones {
-  position: relative;
-  top: 2117px;
-}
-
-#ensaladas:checked ~ .container-opciones .label-entradas {
-  position: relative;
-  top: 140px;
-}
-
-#ensaladas:checked ~ .container-opciones .label-carnes {
-  position: relative;
-  top: 140px;
-}
-
-#ensaladas:checked ~ .container-opciones .label-pastas {
-  position: relative;
-  top: 140px;
-}
-
-#pescados:checked ~ .container-opciones .label-pescados {
-  position: relative;
-  bottom: 2737px;
-}
-
-#pescados:checked ~ .container-cards .pescado {
-  position: relative;
-  bottom: 770px;
-}
-
-#pescados:checked ~ .container-opciones {
-  position: relative;
-  top: 2220px;
-}
-
-#pescados:checked ~ .container-opciones .label-entradas {
-  position: relative;
-  top: 140px;
-}
-
-#pescados:checked ~ .container-opciones .label-carnes {
-  position: relative;
-  top: 140px;
-}
-
-#pescados:checked ~ .container-opciones .label-pastas {
-  position: relative;
-  top: 140px;
-}
-
-#pescados:checked ~ .container-opciones .label-ensaladas {
-  position: relative;
-  top: 140px;
-}
-
-#postres:checked ~ .container-opciones .label-postres {
-  position: relative;
-  bottom: 2792px;
-}
-
-#postres:checked ~ .container-cards .postre {
-  position: relative;
-  bottom: 770px;
-}
-
-#postres:checked ~ .container-opciones {
-  position: relative;
-  top: 2140px;
-}
-
-#postres:checked ~ .container-opciones .label-entradas {
-  position: relative;
-  top: 140px;
-}
-
-#postres:checked ~ .container-opciones .label-carnes {
-  position: relative;
-  top: 140px;
-}
-
-#postres:checked ~ .container-opciones .label-pastas {
-  position: relative;
-  top: 140px;
-}
-
-#postres:checked ~ .container-opciones .label-ensaladas {
-  position: relative;
-  top: 140px;
-}
-
-#postres:checked ~ .container-opciones .label-pescados {
-  position: relative;
-  top: 140px;
-}
-
-#bebidas:checked ~ .container-opciones .label-bebidas {
-  position: relative;
-  bottom: 2990px;
-}
-
-#bebidas:checked ~ .container-cards .bebida {
-  position: relative;
-  bottom: 770px;
-}
-
-#bebidas:checked ~ .container-opciones {
-  position: relative;
-  top: 2200px;
-}
-
-#bebidas:checked ~ .container-opciones .label-entradas {
-  position: relative;
-  top: 140px;
-}
-
-#bebidas:checked ~ .container-opciones .label-carnes {
-  position: relative;
-  top: 140px;
-}
-
-#bebidas:checked ~ .container-opciones .label-pastas {
-  position: relative;
-  top: 140px;
-}
-
-#bebidas:checked ~ .container-opciones .label-ensaladas {
-  position: relative;
-  top: 140px;
-}
-
-#bebidas:checked ~ .container-opciones .label-pescados {
-  position: relative;
-  top: 140px;
-}
-
-#bebidas:checked ~ .container-opciones .label-postres {
-  position: relative;
-  top: 140px;
-}
-
-.img-label {
-  width: 100px;
-  height: 100px;
-  transition: all 1s;
-}
-
-.img-label:hover {
-  transform: scale(1.3);
-  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4117647059));
-}
-
 .card {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(101, 94, 94, 0.2);
+  transition: transform 0.3s ease;
+  border-radius: 5px;
   width: 288px;
-  transition: transform 0.5s;
-  background-color: black;
-}
-
-.card {
-  display: none;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .card-title {
-  color: rgba(255, 255, 255, 0.7960784314);
-  font-size: 20px;
-  font-family: "almendra";
+  font-size: 18px;
+  font-weight: bold;
   text-align: center;
+  font-family: "almendra";
 }
 
 .card-text {
-  color: #ddbf88;
-  font-family: "geraldine";
-  text-align: center;
   font-size: 14px;
+  text-align: center;
+  font-family: "geraldine";
 }
 
-.card-img-top {
+.card img {
   max-width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
 }
 
-.boton-menu {
+.container-cards {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 85px;
-  height: 25px;
-  background-color: black;
-  color: black;
-  font-family: "geraldine";
-  transition: background-color 0.1s;
-  position: relative;
-  left: 83px;
-  border-radius: 5px;
+  gap: 20px;
+  margin-top: 20px;
 }
 
-.boton-menu:hover {
-  background-color: rgba(255, 255, 255, 0.7960784314);
-  transition-delay: 0.1s;
-}
-
-.container-opciones {
-  justify-content: center;
-  text-align: center;
-  gap: 30px;
-  margin: 20px;
-}
-
-.container-opciones h2 {
-  text-align: center;
-  font-family: "geraldine";
-  color: rgba(163, 127, 97, 0.4980392157);
-  margin: 5px;
-}
-
-.container-opciones img {
-  width: 70px;
-  height: 60px;
+#entradas, #carnes, #pastas, #pescados, #ensaladas, #postres, #bebidas {
+  display: none;
 }
 
 #section1-contacto {
