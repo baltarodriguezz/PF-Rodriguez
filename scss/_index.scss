@@ -5,28 +5,50 @@
     align-items: center;
     height: 570px;
 
+
+    img{
+        width: 90px;
+        height: 100px;
+        position: relative;
+        top: 180px;
+    }
+
     h1{
-    font-family: 'almendra';
+    font-family: 'meladu';
     font-size: 30px;
-    color:#bf9d60;
+    color:$color-primero;
     position: relative;
-    top: 5px;
+    top: 20px;
 }
     h2{
-    font-family: 'almendra';
+    font-family: 'meladu';
     font-size: 20px;
-    color: #bf9d60;
+    color: $color-primero;
     font-weight: 400;
 }
+}
+
+.h1-destacado-index{
+    font-family: 'meladu';
+    font-size: 60px;
+    margin: 10px;
+    font-weight: 400;
+    color: $color-quinto;
+}
+#body-index{
+    background-image: url(../img/sobremesa-madera-vacia-fondo-borroso-interior-cafeteria-o-restaurante_7188-1381.jpg);
+    background-repeat: no-repeat;
+    background-size: 1050px;
 }
 .section2-index{
     margin-top: 70px;
     gap: 5px;
+    background-color: $color-primero;
     
     h2 { 
     margin-left: 20px;
     font-family: 'almendra';
-    color:#a37f617f;
+    color:$color-segundo;
     position: relative;
     top: 5px;
 }
@@ -57,6 +79,7 @@
     font-size: 16px;
     text-align: center;
     font-family: 'geraldine';
+    color: $color-cuarto;
     }
     @media (min-width:1110px) {
         #chef-2 {

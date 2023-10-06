@@ -46,20 +46,26 @@
             </div>
         </nav>
     </header>
-    <section class="section1-reservas">
-        <h1 class="titulo1-reservas">RESERVAS</h1>
-        <form class="form1-reservas">
-            <label class="item-reservas" for="fecha">NOMBRE Y APELLIDO</label>
-            <input class="item2-reservas" type="text" id="fecha"><br>
-            <label class="item-reservas" for="email">EMAIL</label>
-            <input class="item2-reservas" type="email" id="email"><br>
-            <label class="item-reservas" for="fecha">FECHA</label>
-            <input class="item2-reservas" type="number" id="fecha"><br>
-            <label class="item-reservas" for="horario">HORARIO</label>
-            <input class="item2-reservas" type="number" id="horario"><br>
-            <label class="item-reservas" for="grupo de personas">GRUPO DE PERSONAS</label>
-            <input class="item2-reservas" type="number" id="grupo de personas">
-            <input class="boton" type="submit" value="RESERVAR">
+    <section id="section1-reservas">
+        <h2>HAZ TU RESERVA</h2>
+        <p> y déjanos servirte con la excelencia que nos caracteriza !!!</p>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="date">Fecha:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="guests">Número de personas:</label>
+            <input type="number" id="guests" name="guests" required>
+
+            <button type="submit">Enviar Reserva</button>
         </form>
     </section>
     <footer class="footer">

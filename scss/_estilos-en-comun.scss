@@ -11,10 +11,19 @@
     src: url(../fuentes/Geraldine\ Regular.ttf);
 }
 
+@font-face{
+    font-family:'meladu' ;
+    src: url(../fuentes/MELADU\ ROSE.otf);
+}
+/* Variables */
+$color-primero:#C6AC8F;
+$color-segundo:#22333B;
+$color-quinto:#EAE0D5;
+$color-tercero:#0A0908;
+$color-cuarto:#5E503F;
+
 body{
-    background-image:url(../img/istockphoto-1170425306-612x612.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+background-color: $color-primero;
 }
 
 .img-logo{
@@ -33,29 +42,27 @@ a{
 }
 
 .navbar {
-    background-color:#a37f617f;
-
+    background-color: $color-segundo;
 }
 @media (min-width:1000px){
     .navbar{
         gap: 100px;
     }
 }
-.navbar-toggler{
-    color:rgba(0, 0, 0, 0.303) ;
-    border: #dbfcff;
-}
 
-.nav-item:hover{
-    background-color:#a37f617f ;
-    transition: background-color 0.5s;
+.navbar-toggler{
+    background-color: #22333B;
+    border: 0px;
+}
+.nav-link{
+    color:$color-primero;
 }
 .container-fluid{
     display: flex;
     justify-content: space-around;
 }
 footer{
-    background-color: rgba(0, 0, 0, 0.871);
+    background-color: $color-segundo;
     height: 35px;
     display: flex;
     align-items: center;
@@ -84,5 +91,8 @@ footer hr{
 .menu-lo{
     font-family: 'almendra';
     font-size: 20px;
-    color:#a37f617f ;
+    color:$color-quinto;
+}
+img{
+    max-width: 100%;
 }

@@ -1,23 +1,31 @@
 .titulo1-historia{
-    margin: 10px 10px 0px 10px;
+    margin:  30px 10px 10px 10px;
     text-align: center;
-    color: #bf9d60;
-    font-family: 'almendra';
+    color: $color-segundo;
+    font-family: 'meladu';
     font-size: 40px;
 }
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+ }
+ .img-historia{
+    @include sizes(300px, 200px);
+ }
 
 .p1-historia{
     margin: 10px;
     text-align: center;
     font-size: 15px;
     font-family: 'geraldine';
+    color: $color-cuarto;
 }
 
 .section1-historia{
-    gap: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 @media (min-width:768px){
     .section1-historia img {
@@ -26,9 +34,8 @@
     }
 }
 .img-historia{
-    width: 300px;
-    height: 200px;
     border-radius: 20px;
     margin: 10px;
+    filter:drop-shadow(0 0 30px  #00000069);
 }
 
