@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Don Rodriguez</title>
 </head>
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg ">
+  <header>
+    <nav class="navbar navbar-expand-lg ">
         <div class="container-fluid">
             <a class="navbar-brand" href="../index.html">
                 <img class="img-logo"  src="../img/logo-modified.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="menu-lo">MENÚ</span>
+                <span class="menu-lo">MENU</span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -45,61 +46,73 @@
             </div>
         </div>
     </nav>
-    </header>
+</header>
     <div class="container-opciones">
         <link type="image/png" sizes="16x16" rel="icon" href=".../icons8-empanada-16.png">
         <link type="image/png" sizes="96x96" rel="icon" href=".../icons8-empanada-96.png">
         <div class="iconos-menu">
-          <a href="categorias/entradas.html">
+          <a href="categorias/entradas.html" data-aos="zoom-out" data-aos-duration="1000">
             <h2>Entradas</h2>
             <img src="../img/icons8-empanada-flaticons-lineal-color-96.png" alt="entradas">
           </a>
         </div>
-        <div class="iconos-menu">
+        <div class="iconos-menu" data-aos="zoom-out" data-aos-duration="1000">
           <a href="categorias/carnes.html">
             <h2>Carnes</h2>
             <img src="../img/icons8-carne-ios-16-96.png" alt="carnes">
           </a>
         </div>
-        <div class="iconos-menu">
+        <div class="iconos-menu" data-aos="zoom-out" data-aos-duration="1000">
           <a href="categorias/pastas.html">
             <h2>Pastas</h2>
             <img src="../img/icons8-espagueti-ios-16-96.png" alt="pastas">
           </a>
         </div>
-        <div class="iconos-menu">
+        <div class="iconos-menu" data-aos="zoom-out" data-aos-duration="1000">
           <a href="categorias/ensaladas.html">
             <h2>Ensaladas</h2>
             <img src="../img/icons8-ensalada-ios-16-96.png" alt="ensaladas">
           </a>
         </div>
-        <div class="iconos-menu">
+        <div class="iconos-menu" data-aos="zoom-out" data-aos-duration="1000">
           <a href="categorias/pescados.html">
             <h2>Pescados</h2>
             <img src="../img/icons8-pescado-entero-ios-16-96.png" alt="pescados">
           </a>
         </div>
-        <div class="iconos-menu">
+        <div class="iconos-menu" data-aos="zoom-out" data-aos-duration="1000">
           <a href="categorias/postres.html">
             <h2>Postres</h2>
             <img src="../img/icons8-pastel-ios-16-96.png" alt="postres">
           </a>
         </div>
-        <div class="iconos-menu">
+        <div class="iconos-menu" data-aos="zoom-out" data-aos-duration="1000">
           <a href="categorias/bebidas.html">
             <h2>Bebidas</h2>
             <img src="../img/icons8-cerveza-ios-16-96.png" alt="bebidas">
           </a>
         </div>
     </div>
-  <footer>
-      <hr>
-      <i class="bi bi-instagram"></i>
-      <h5>Don Rodriguez</h5>
-      <i class="bi bi-whatsapp"></i>
-      <hr>
+    <footer data-aos="fade-up" data-aos-duration="1000">
+      <div class="div1-footer">
+          <i class="bi bi-facebook" id="icons-1"></i>
+          <i class="bi bi-instagram" id="icons-1"></i>
+          <i class="bi bi-whatsapp" id="icons-1"></i>
+      </div>
+      <div class="div2-footer">
+          <i class="bi bi-telephone" id="icons-2"></i>
+          <p>343245023822</p>
+          <i class="bi bi-envelope" id="icons-2"></i>
+          <p>Donrodriguez@gmail.com</p>
+      </div>
+      <img src="../img/logo-modified.png" alt="">
+      <p>© 2023 Don Rodriguez</p>
+      
   </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();
+    </script>
     </body>
 </html>

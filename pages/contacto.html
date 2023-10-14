@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Don Rodriguez</title>
 </head>
@@ -46,42 +47,56 @@
             </div>
         </nav>
     </header>
-    <section id="section1-contacto">
-        <form class="form1-contacto">
-            <h2>CONTACTANOS!!</h2>
-            <p>Rellena este formulario para poder responder tus dudas</p>
-            <label for="fecha">Nombre y Apellido</label>
-            <input type="text" id="fecha"><br>
-            <label for="Email">Email</label>
-            <input type="email" id="Email"><br>
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono"><br>
-            <label for="mensaje">Dejanos tu mensaje</label>
-            <textarea  class="texto" id="mensaje" cols="90" rows="10"></textarea>
-            <input class="botonss" type="submit" value="Enviar">
-    </section>
-    <section id="section2-contacto">
-        <div>
-            <h2>HORARIO</h2>
-            <p>Lunes a Viernes : 11:00 - 22:00</p>
-            <p>Sabado a Domingo : 11:00 - 00:00</p>
+    <div class="div-contacto">
+        <section id="section1-contacto">
+            <form class="form1-contacto">
+                <h1 data-aos="fade-down" data-aos-duration="1000">CONTACTANOS!!</h1>
+                <p data-aos="fade-up" data-aos-duration="1000">Rellena este formulario para poder responder tus dudas</p>
+                <label for="fecha"data-aos="zoom-in-up" data-aos-duration="1000" >Nombre y Apellido</label>
+                <input type="text" id="fecha" data-aos="zoom-in-up" data-aos-duration="1000"><br>
+                <label for="Email" data-aos="zoom-in-up" data-aos-duration="1000">Email</label>
+                <input type="email" id="Email" data-aos="zoom-in-up" data-aos-duration="1000"><br>
+                <label for="telefono" data-aos="zoom-in-up" data-aos-duration="1000">Telefono</label>
+                <input type="tel" id="telefono" data-aos="zoom-in-up" data-aos-duration="1000"><br>
+                <label for="mensaje" data-aos="zoom-in-up" data-aos-duration="1000">Dejanos tu mensaje</label>
+                <textarea  class="texto" id="mensaje" cols="90" rows="10" data-aos="zoom-in-up" data-aos-duration="1000"></textarea>
+                <input class="botonss" type="submit" value="Enviar">
+        </section>
+        <section id="section2-contacto" data-aos="fade-up" data-aos-duration="1000">
+            <div>
+                <h2>HORARIO</h2>
+                <p>Lunes a Viernes : 11:00 - 22:00</p>
+                <p>Sabado a Domingo : 11:00 - 00:00</p>
+            </div>
+            <div>
+                <h2>DONDE ESTAMOS</h2>
+                <p>Ramon Jiste 400</p>
+                <p>Cordoba,Argentina</p>
+    
+                <p>Tel: 343245023822</p>
+                <p>Gmail: Donrodriguez@gmail.com</p>
+            </div>
+        </section>
+    </div>
+    <footer data-aos="fade-up" data-aos-duration="1000">
+        <div class="div1-footer">
+            <i class="bi bi-facebook" id="icons-1"></i>
+            <i class="bi bi-instagram" id="icons-1"></i>
+            <i class="bi bi-whatsapp" id="icons-1"></i>
         </div>
-        <div>
-            <h2>DONDE ESTAMOS</h2>
-            <p>Ramon Jiste 400</p>
-            <p>Cordoba,Argentina</p>
-
-            <p>Tel: 343245023822</p>
-            <p>Gmail: Donrodriguez@gmail.com</p>
+        <div class="div2-footer">
+            <i class="bi bi-telephone" id="icons-2"></i>
+            <p>343245023822</p>
+            <i class="bi bi-envelope" id="icons-2"></i>
+            <p>Donrodriguez@gmail.com</p>
         </div>
-    </section>
-    <footer>
-        <hr>
-        <i class="bi bi-instagram"></i>
-        <h5>Don Rodriguez</h5>
-        <i class="bi bi-whatsapp"></i>
-        <hr>
+        <img src="../img/logo-modified.png" alt="">
+        <p>© 2023 Don Rodriguez</p>
+        
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();
+    </script>
 </body>
 </html>

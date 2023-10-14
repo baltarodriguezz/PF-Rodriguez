@@ -22,10 +22,8 @@
 }
 
 .section1-historia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @extend .display;
+    margin-top: 60px;
 }
 @media (min-width:768px){
     .section1-historia img {

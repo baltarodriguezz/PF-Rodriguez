@@ -1,8 +1,5 @@
 .section1-index{ 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @extend .display;
     height: 570px;
 
 
@@ -27,7 +24,21 @@
     font-weight: 400;
 }
 }
-
+@media (min-width:768px){
+    .section1-index  {
+        height: 650px;
+    }
+}
+@media (min-width:768px){
+    .section1-index h2 {
+        font-size: 30px;
+    }
+}
+@media (min-width:768px){
+    .section1-index img {
+        top: 200px;
+    }
+}
 .h1-destacado-index{
     font-family: 'meladu';
     font-size: 60px;
@@ -35,10 +46,22 @@
     font-weight: 400;
     color: $color-quinto;
 }
+@media (min-width:768px){
+    .h1-destacado-index{
+        font-size: 70px;
+    }
+}
 #body-index{
     background-image: url(../img/sobremesa-madera-vacia-fondo-borroso-interior-cafeteria-o-restaurante_7188-1381.jpg);
     background-repeat: no-repeat;
     background-size: 1050px;
+}
+
+@media (min-width:768px){
+    #body-index{
+        background-size: 1400px;
+        height: 900px;
+    }
 }
 .section2-index{
     margin-top: 70px;
@@ -53,6 +76,7 @@
     top: 5px;
 }
 }
+
 .chef-4 {
     display: flex;
     justify-content: center;

@@ -1,45 +1,53 @@
-#section1-reservas{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+$condicion: true;
 
-    h2{
+#section1-reservas {
+    @extend .display;
+    margin-top: 70px;
+
+    h1 {
         font-size: 40px;
         font-family: 'meladu';
         color: $color-segundo;
         margin: 20px 10px 0px 10px;
     }
-    form{
+    form {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 5px;
+        gap: 6px;
+        height: 400px;
     }
 
-    input{
+    input {
         width: 220px;
         border: none;
         padding: 5px;
         background-color: $color-quinto;
     }
 
-    label{
+    label {
         color: $color-quinto;
+        font-family: 'meladu';
     }
 
     button {
-        background-color: $color-segundo;
-        color: $color-quinto;
         font-family: 'meladu';
         margin: 10px;
         border: none;
         width: 150px;
         height: 30px;
+    
+    @if $condicion {
+        background-color: $color-segundo;
+        color: $color-quinto;
+    } @else {
+        background-color: $color-tercero;
+        color: $color-primero;
     }
+}
 
-    p{
+    p {
         color: $color-segundo;
         font-size: 14px;
         font-family: 'meladu';
@@ -47,5 +55,21 @@
         width: 250px;
     }
 }
-/* CSS para personalizar el campo de fecha */
 
+@media (min-width:1110px){
+    #section1-reservas input {
+        width: 400px;
+    }
+}
+
+@media (min-width:1110px){
+    #section1-reservas label {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1110px){
+    #section1-reservas form {
+        gap: 2px;
+    }
+}
